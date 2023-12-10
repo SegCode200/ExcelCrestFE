@@ -12,7 +12,7 @@ import pics4 from "../../assets/stethoscope-copy-space.jpg"
 const Hero = () => {
   const settings = {
     dots: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,

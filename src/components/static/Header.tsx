@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
 
+
   const [hover, onHover] = useState<boolean>(false)
   const setHover = ()=>{
     onHover(!hover)
@@ -14,7 +15,10 @@ const Header = () => {
     onHover1(!hover1)
   }
   return (
-    <div>
+    <div >
+   
+     
+    
       <Container>
         <Main>
           <NavLink to="/" style={{textDecoration: "none"}}>
@@ -25,8 +29,16 @@ const Header = () => {
           </NavLink>
 
           <NavHolder>
+            {/* Home */}
+            <NavLink to="/"  style={{textDecoration: "none", color: "black"}}>
             <Nav>Home</Nav> 
+            </NavLink>
+            {/* About Page */}
+            <NavLink to="/about"  style={{textDecoration: "none", color: "black"}}>
             <Nav>About</Nav> 
+            </NavLink>
+
+
             <Nav
             onMouseEnter={()=>setHover()}
             onMouseLeave={()=>setHover()}
@@ -55,7 +67,11 @@ const Header = () => {
               }
 
             </Nav> 
+            {/* Contact  */}
+                <NavLink to="/contact"  style={{textDecoration: "none", color: "black"}}>
             <Nav>Contact Us</Nav> 
+            </NavLink>
+
           </NavHolder>
         </Main>
 
