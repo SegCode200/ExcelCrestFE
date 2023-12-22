@@ -90,7 +90,7 @@ individual in the community.</SmallText>
 export default Hero
 
 const Button = styled.button`
-background-color: whitesmoke;
+background-color: #F5F5F5;
 padding: 10px 20px;
 font-family: Poppins;
 font-size: 14px;
@@ -163,9 +163,10 @@ width: 100%;
 const Container = styled.div`
 overflow: hidden;
 width: 100%;
-height: calc(100vh - 90px );
+height: 110vh;
 display: flex;
 align-items: center;
 justify-content: center;
+background-color: #F5F5F5;
 
 `

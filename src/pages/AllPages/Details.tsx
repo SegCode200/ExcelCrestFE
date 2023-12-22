@@ -68,23 +68,21 @@ const Logo = styled.div`
 
 `
 const Card = styled.div`
-border: 1px solid black;
+/* border: 1px solid black; */
 padding: 15px;
 height: 300px;
 width:250px;
 margin: 8px;
-border-radius:10px;
-box-shadow: 0 10px 10px rgba(0,0,0,.2);
+/* border-radius:10px; */
 transition: all .3s ease-in-out;
 text-align: center;
 cursor:pointer;
+background-color:white;
 /* display: flex; */
 &:hover{
+    background-color:whitesmoke;
 transform: scale(1.05) translateY(-7px);
-opacity: 0.9;
-background-color: #0000FF;
-color:whitesmoke;
-border: 1px solid dodgerblue;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 `
@@ -110,6 +108,6 @@ padding: 70px 0;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: whitesmoke;
+background-color: #F5F5F5;
 
 `

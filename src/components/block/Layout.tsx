@@ -6,7 +6,7 @@ import Footer from '../static/Footer'
 const Layout = () => {
   return (
     <div>
-        <Header/>
+        <Header  />
         <Outlet/>
         <Footer/>
         

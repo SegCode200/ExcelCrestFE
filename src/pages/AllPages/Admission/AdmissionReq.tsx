@@ -1,17 +1,19 @@
 import React from 'react'
+import pics from "../../../assets/national-cancer-institute-701-FJcjLAQ-unsplash.jpg"
 import { styled } from 'styled-components'
-import pics from "../../../assets/young-handsome-physician-medical-robe-with-stethoscope.jpg"
-import HeroPage from './HeroPage'
+import Hero from "./Hero"
+import Programs from '../Programs'
 
 
-const AboutPage = () => {
+const AdmissionReq = () => {
+
   return (
     <div>
-      <Container style={{backgroundImage: `url(${pics})`}}>
+        <Container style={{backgroundImage: `url(${pics})`}}>
       <Blur>
         <Main>
-        <Text>Discover Excel Crest College of Medical Health & Management Sciences, Lagos  </Text>
-        <Sub>ABOUT US</Sub>
+        <Text>Apply for Excel Crest College of Medical Health & Management Sciences, Lagos  </Text>
+        <Sub>ADMISSION REQUIREMENT</Sub>
         
 
 
@@ -19,13 +21,13 @@ const AboutPage = () => {
         </Blur>
        
       </Container>
-      <HeroPage/>
-      
+      <Hero/>
+      <Programs/>
     </div>
   )
 }
 
-export default AboutPage
+export default AdmissionReq
 const Sub = styled.div`
 font-size: 50px;
 font-weight: 900;
@@ -61,7 +63,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 100vh;
+height: 100vh;;
 object-fit: cover;
 background-size: cover;
 background-repeat: no-repeat;

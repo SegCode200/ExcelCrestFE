@@ -53,7 +53,7 @@ align-items: center;
 margin: 10px 0;
 cursor: pointer;
 &:hover{
-  background-color: whitesmoke ;
+  background-color: #F5F5F5 ;
   color: black;
 
 }

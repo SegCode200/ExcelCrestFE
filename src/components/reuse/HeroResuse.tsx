@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { styled } from 'styled-components'
-import pics from "../../../assets/young-handsome-physician-medical-robe-with-stethoscope.jpg"
-import HeroPage from './HeroPage'
 
 
-const AboutPage = () => {
+interface iData {
+    title: string,
+    description?: string,
+    photo: any,
+}
+
+const HeroResuse:React.FC<iData> = ({title, description, photo}) => {
   return (
     <div>
-      <Container style={{backgroundImage: `url(${pics})`}}>
+            <Container style={{backgroundImage: `url(${photo})`}}>
       <Blur>
         <Main>
-        <Text>Discover Excel Crest College of Medical Health & Management Sciences, Lagos  </Text>
-        <Sub>ABOUT US</Sub>
+        <Text>{title} </Text>
+        <Sub>{description}</Sub>
         
 
 
@@ -19,13 +23,12 @@ const AboutPage = () => {
         </Blur>
        
       </Container>
-      <HeroPage/>
-      
+
     </div>
   )
 }
 
-export default AboutPage
+export default HeroResuse
 const Sub = styled.div`
 font-size: 50px;
 font-weight: 900;

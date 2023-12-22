@@ -1,31 +1,30 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import pics from "../../../assets/young-handsome-physician-medical-robe-with-stethoscope.jpg"
-import HeroPage from './HeroPage'
+import Herpages from './Herpages'
+import pics from "../../../assets/firmbee-com-SpVHcbuKi6E-unsplash.jpg"
 
-
-const AboutPage = () => {
+const ContactPage = () => {
   return (
     <div>
-      <Container style={{backgroundImage: `url(${pics})`}}>
-      <Blur>
-        <Main>
-        <Text>Discover Excel Crest College of Medical Health & Management Sciences, Lagos  </Text>
-        <Sub>ABOUT US</Sub>
-        
-
-
-        </Main>
-        </Blur>
-       
-      </Container>
-      <HeroPage/>
+    <Container style={{backgroundImage: `url(${pics})`}}>
+    <Blur>
+      <Main>
+      <Text>Get in Touch with us  </Text>
+      <Sub>CONTACT US</Sub>
       
-    </div>
+
+
+      </Main>
+      </Blur>
+     
+    </Container>
+    <Herpages/>
+    
+  </div>
   )
 }
 
-export default AboutPage
+export default ContactPage
 const Sub = styled.div`
 font-size: 50px;
 font-weight: 900;
@@ -61,7 +60,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 100vh;
+height: 100vh;;
 object-fit: cover;
 background-size: cover;
 background-repeat: no-repeat;

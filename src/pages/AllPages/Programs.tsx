@@ -114,5 +114,5 @@ justify-content: center;
 width: 100%;
 height: auto;
 padding: 50px 0;
-background-color: whitesmoke;
+background-color: #F5F5F5;
 `
