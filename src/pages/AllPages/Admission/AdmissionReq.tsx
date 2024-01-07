@@ -3,12 +3,15 @@ import pics from "../../../assets/national-cancer-institute-701-FJcjLAQ-unsplash
 import { styled } from 'styled-components'
 import Hero from "./Hero"
 import Programs from '../Programs'
+import Transition from '../../../components/reuse/ScrolltoTop'
 
 
 const AdmissionReq = () => {
 
   return (
     <div>
+     
+        
         <Container style={{backgroundImage: `url(${pics})`}}>
       <Blur>
         <Main>
@@ -23,6 +26,7 @@ const AdmissionReq = () => {
       </Container>
       <Hero/>
       <Programs/>
+       
     </div>
   )
 }

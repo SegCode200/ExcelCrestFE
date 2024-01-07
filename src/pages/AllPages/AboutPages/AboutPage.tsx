@@ -2,11 +2,13 @@ import React from 'react'
 import { styled } from 'styled-components'
 import pics from "../../../assets/young-handsome-physician-medical-robe-with-stethoscope.jpg"
 import HeroPage from './HeroPage'
+import Transition from '../../../components/reuse/ScrolltoTop'
 
 
 const AboutPage = () => {
   return (
     <div>
+   
       <Container style={{backgroundImage: `url(${pics})`}}>
       <Blur>
         <Main>
@@ -21,11 +23,12 @@ const AboutPage = () => {
       </Container>
       <HeroPage/>
       
+     
     </div>
   )
 }
 
-export default AboutPage
+export default  AboutPage 
 const Sub = styled.div`
 font-size: 50px;
 font-weight: 900;

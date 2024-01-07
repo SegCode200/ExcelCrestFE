@@ -2,6 +2,7 @@ import React from 'react'
 import { styled } from 'styled-components'
 import Herpages from './Herpages'
 import pics from "../../../assets/firmbee-com-SpVHcbuKi6E-unsplash.jpg"
+import Transition from "../../../components/reuse/ScrolltoTop"
 
 const ContactPage = () => {
   return (

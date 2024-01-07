@@ -163,7 +163,7 @@ width: 100%;
 const Container = styled.div`
 overflow: hidden;
 width: 100%;
-height: 110vh;
+height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;

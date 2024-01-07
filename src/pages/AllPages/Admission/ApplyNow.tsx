@@ -1,8 +1,12 @@
 import React from 'react'
 
+
 const ApplyNow = () => {
   return (
-    <div>ApplyNow</div>
+    <div>
+      
+      
+    </div>
   )
 }
 
