@@ -3,19 +3,11 @@ import { styled } from 'styled-components'
 import {GiSoapExperiment} from "react-icons/gi"
 import {PiStudentFill} from "react-icons/pi"
 import {Link} from "react-router-dom"
-import { HiOutlineArrowNarrowUp } from "react-icons/hi"
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
+
 
 const HeroPage = () => {
-  const [Scroll, setScroll] = useState<boolean>(false)
 
-  const onScroll = ()=>{
-    if(window.scrollY <= 100){
-        setScroll(false)
-    }else{
-      setScroll(true)
-    }
-  }
-  window.addEventListener("scroll",onScroll)
   return (
     <div>
       <Container>
@@ -104,33 +96,14 @@ heath education related issues in Nigeria.</Nav><br/>
         </Main>
        
       </Container>
-      {
-        Scroll?
-         <Top to="" className='head'  id= "1" >
-      <HiOutlineArrowNarrowUp size={30} color="white"/>
-    </Top>
-      :    null
-      
-      }
+      <ButtonToTop/>
+    
     </div>
   )
 }
 
 export default HeroPage
-const Top = styled(Link)`
-position: fixed;
-cursor:pointer;
-padding:  15px;
-background-color:dodgerblue;
-right: 30px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content: center;
-bottom:30px;
 
-
-`
 const Nav = styled.div``
 const NavHolder = styled.div``
 const Icon1 = styled(PiStudentFill)`

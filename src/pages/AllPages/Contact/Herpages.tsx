@@ -4,6 +4,7 @@ import { LuPhoneCall } from "react-icons/lu"
 import { IoIosSend } from "react-icons/io"
 import { MdLocationPin } from "react-icons/md"
 import { TiSocialTwitter, TiSocialLinkedin, TiSocialInstagram, TiSocialFacebook,TiSocialGooglePlus } from "react-icons/ti"
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
 
 const Herpages = () => {
   return (
@@ -71,6 +72,7 @@ const Herpages = () => {
                 </RightHolder>
             </Main>
         </Container>
+        <ButtonToTop/>
     </div>
   )
 }

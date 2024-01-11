@@ -3,6 +3,7 @@ import HeroResuse from '../../../components/reuse/HeroResuse'
 import pics from "../../../assets/wsi-imageoptim-lab-work-vials-testing-medical-1024x682.jpg"
 import styled from 'styled-components'
 import { LuPlus,LuMinus  } from "react-icons/lu"
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
 
 const MedicalCard = () => {
 
@@ -107,6 +108,7 @@ const MedicalCard = () => {
         </RightHolder>
         </Main>
       </Container>
+      <ButtonToTop/>
 
 
     </div>

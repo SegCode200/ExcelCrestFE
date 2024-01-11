@@ -3,6 +3,7 @@ import pics from "../../../assets/pharmcy-with-person-holding-medicine.jpg"
   import HeroResuse from '../../../components/reuse/HeroResuse'
 import { styled } from 'styled-components'
 import { LuMinus, LuPlus } from 'react-icons/lu'
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
 
 
 const PharmacyTech = () => {
@@ -127,6 +128,7 @@ These technicians work in an office-like environment, fulfilling prescriptions f
         </RightHolder>
         </Main>
       </Container>
+      <ButtonToTop/>
     </div>
   )
 }

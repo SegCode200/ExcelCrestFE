@@ -21,6 +21,48 @@ const Hero = () => {
     
     
   };
+
+  const style={
+    display : "flex", 
+    alignItems: "start",
+    "@media  (max-width: 480px)" : {
+      display: "flex" ,
+      alignItems: "start"
+
+    }
+  }
+  const style1={
+    display : "flex", 
+    alignItems: "end",
+    "@media  (max-width: 480px)" : {
+      display: "flex" ,
+      alignItems: "start"
+
+    }
+  }
+  const style2={
+    display : "flex", 
+    alignItems: "start",
+    "@media  (max-width: 480px)" : {
+      display: "flex" ,
+      alignItems: "start" 
+
+    }
+  }
+  const style3={
+    display : "flex", 
+    alignItems: "center", 
+    "@media  (max-width: 480px)" : {
+      display: "flex" ,
+      alignItems: "center",
+      marginTop: "10px",
+      marginRight: "20px",
+      fontSize: "120px"
+      
+      
+
+    }
+  }
   return (
     <div>
 
@@ -30,7 +72,7 @@ const Hero = () => {
                         <ImageHolder>
                             <Image src={pics}/>
                             <Blur/>
-                        <TextHolder>
+                        <TextHolder style= {style3}>
                           <Details>Welcome to Excel Crest College of Medical Health & Management </Details>
                           <SmallText> We are poised to 
         equip world class global competitive medical health professionals with 
@@ -42,7 +84,7 @@ const Hero = () => {
                         <ImageHolder >
                             <Image src={pics1}/>
                             <Blur/>
-                        <TextHolder style={{display: "flex", alignItems: "start"}}>
+                        <TextHolder style={style}>
                           <Details>Admission in Progress for 2023/2024 Academic Year </Details>
                           <SmallText> Join our Medical and Health Management Programmes </SmallText>
                           <Button>Apply Now </Button>
@@ -63,7 +105,7 @@ individual in the community.</SmallText>
                         <ImageHolder>
                             <Image src={pics3}/>
                             <Blur/>
-                        <TextHolder style={{display: "flex", alignItems: "end"}}>
+                        <TextHolder style={style1}>
                           <Details>Excel Crest Student Information HandBook  </Details>
                           <SmallText> Student HandBook</SmallText>
                           <Button>Download Now </Button>
@@ -72,7 +114,8 @@ individual in the community.</SmallText>
                         <ImageHolder>
                             <Image src={pics4}/>
                             <Blur/>
-                        <TextHolder style={{display: "flex", alignItems: "start"}} >
+                            
+                        <TextHolder style={style2} >
                           <Details style={{fontSize: "30px"}}>Excel Crest Programmes  </Details>
                           <SmallText style={{fontSize: "50px", fontWeight: "800", margin: "0px "}}> Online Application Begins </SmallText>
                           <SmallText style={{fontSize: "15px", color: "whitesmoke", margin: "10px 0"}}> Online Application Begins </SmallText>
@@ -101,6 +144,11 @@ cursor: pointer;
   background-color: dodgerblue;
   color: whitesmoke;
 }
+@media screen  and (max-width: 863px ){
+  padding:  8px;
+  font-size: 12px;
+  
+}
 `
 const SmallText = styled.div`
 color: dodgerblue;
@@ -108,7 +156,14 @@ text-align: center;
 text-transform: uppercase;
 font-weight: 600;
 margin: 20px 0;
-
+@media screen  and (max-width: 863px ){
+  font-size: 14px;
+  
+}
+@media screen  and (max-width: 480px ){
+  font-size: 15px;
+  
+}
 
 
 `
@@ -118,7 +173,14 @@ font-size: 40px;
 text-align: center;
 font-weight: 800 ;
 text-transform: uppercase;
-
+@media screen  and (max-width: 863px ){
+  font-size: 25px;
+  
+}
+@media screen  and (max-width: 480px ){
+  font-size: 20px;
+  
+}
 `
 const TextHolder = styled.div`
 position: absolute;
@@ -132,6 +194,11 @@ margin-top: 160px;
 margin-left: 50px;
 /* justify-content: center; */
 flex-direction: column;
+@media screen  and (max-width: 863px ){
+  margin-top: 190px;
+margin-left: 40px;
+  
+}
 `
 const Blur = styled.div`
 position: absolute;
@@ -168,5 +235,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 background-color: #F5F5F5;
+@media screen and (max-width: 480px ) {
+  height: 80vh;
+}
 
 `

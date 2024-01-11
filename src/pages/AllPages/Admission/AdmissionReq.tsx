@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 import Hero from "./Hero"
 import Programs from '../Programs'
 import Transition from '../../../components/reuse/ScrolltoTop'
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
 
 
 const AdmissionReq = () => {
@@ -26,6 +27,8 @@ const AdmissionReq = () => {
       </Container>
       <Hero/>
       <Programs/>
+
+      <ButtonToTop/>
        
     </div>
   )

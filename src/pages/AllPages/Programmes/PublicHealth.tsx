@@ -3,6 +3,7 @@ import HeroResuse from '../../../components/reuse/HeroResuse'
 import pics from "../../../assets/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg"
 import { styled } from 'styled-components'
 import { LuMinus, LuPlus } from 'react-icons/lu'
+import ButtonToTop from '../../../components/reuse/ButtonToTop'
 
 const PublicHealth = () => {
   const [Upset, setUpset] = useState<boolean>(false)
@@ -105,6 +106,8 @@ const PublicHealth = () => {
         </RightHolder>
         </Main>
       </Container>
+      
+      <ButtonToTop/>
     </div>
   )
 }

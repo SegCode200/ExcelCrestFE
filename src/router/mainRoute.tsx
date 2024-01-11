@@ -12,6 +12,7 @@ import PharmacyTech from "../pages/AllPages/Programmes/PharmacyTech"
 
 
 export const mainRoute = createBrowserRouter([
+ 
     {
         element: <Layout/>,
         path: "/",
